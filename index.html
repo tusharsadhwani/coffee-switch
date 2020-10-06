@@ -54,11 +54,18 @@
         height: 100%;
         transform: rotate(-180deg);
         transition-timing-function: ease-in-out;
+        user-select: none;
+        -ms-user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        user-drag: none;
+        -ms-user-drag: none;
+        -moz-user-drag: none;
+        -webkit-user-drag: none;
       }
       #switch img.switch-on {
         transform: rotate(0deg);
       }
-
       #coffee-empty.switch-on {
         opacity: 0;
       }
