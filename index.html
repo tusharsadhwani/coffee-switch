@@ -43,15 +43,17 @@
         left: -10%;
         padding-left: 0;
         padding-right: 50%;
+        transition-timing-function: ease-in-out;
       }
       #switch .switch-img-container.switch-on {
         left: 10%;
-        padding-left: 45%;
+        padding-left: 42%;
         padding-right: 0;
       }
       #switch img {
         height: 100%;
         transform: rotate(-180deg);
+        transition-timing-function: ease-in-out;
       }
       #switch img.switch-on {
         transform: rotate(0deg);
@@ -80,8 +82,8 @@
       for (coffee of coffees) {
         const coffeeImg = coffee.querySelector("img");
 
-        coffee.style.transitionDuration = "1000ms";
-        coffeeImg.style.transitionDuration = "1000ms";
+        coffee.style.transitionDuration = "700ms";
+        coffeeImg.style.transitionDuration = "700ms";
 
         if (coffee.classList.contains("switch-on")) {
           coffee.classList.remove("switch-on");
